@@ -17,3 +17,14 @@ images built and pushed to registry from
     
     terraform plan
     terraform apply
+    
+# Restore state
+
+Although the "tfstate" state file [should be stored for integrity purposes](https://www.terraform
+.io/docs/state/purpose.html) - e.g. in [GCS backend](https://www.terraform.io/docs/backends/types/gcs.html) - you may
+be able to import current state from real world, e.g.
+    
+    terraform import kubernetes_deployment.hello-nginx default/hello-nginx
+    terraform import kubernetes_service.hello-nginx default/hello-nginx
+    
+    

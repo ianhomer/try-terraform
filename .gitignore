@@ -7,5 +7,12 @@
 
 build
 
+# Docker
+
 .env
+
+# Terraform
+
 .terraform
+.tfstate
+.tfstate.backup
