@@ -21,6 +21,7 @@ images built and pushed to registry from
 # Workflow
 
     brew install pre-commit
+    brew install terraform-docs
 
     terraform fmt
     terraform validate
