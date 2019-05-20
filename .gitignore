@@ -1,0 +1,11 @@
+# IDEA
+
+.idea/workspace.xml
+.idea/sonarlint
+
+# Build
+
+build
+
+.env
+.terraform
