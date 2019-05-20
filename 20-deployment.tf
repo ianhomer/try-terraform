@@ -12,6 +12,8 @@ resource "kubernetes_deployment" "hello-nginx" {
       }
     }
 
+    min_ready_seconds = 10
+
     template {
       metadata {
         labels {

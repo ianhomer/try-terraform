@@ -27,4 +27,6 @@ be able to import current state from real world, e.g.
     terraform import kubernetes_deployment.hello-nginx default/hello-nginx
     terraform import kubernetes_service.hello-nginx default/hello-nginx
     
+Also note that if you do update deployment via another way - e.g console, kubectl apply, then terraform will do a 
+```terraform refresh``` before the ```plan``` to get update the local state.    
     
