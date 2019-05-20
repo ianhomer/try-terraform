@@ -9,7 +9,7 @@ resource "kubernetes_service" "hello-nginx" {
     }
 
     port {
-      port        = 80
+      port = 80
     }
 
     type = "LoadBalancer"

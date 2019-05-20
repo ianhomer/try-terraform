@@ -18,6 +18,13 @@ images built and pushed to registry from
     terraform plan
     terraform apply
     
+# Workflow
+
+    brew install pre-commit
+
+    terraform fmt
+    terraform validate
+        
 # Restore state
 
 Although the "tfstate" state file [should be stored for integrity purposes](https://www.terraform
