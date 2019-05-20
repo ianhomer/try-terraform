@@ -21,6 +21,9 @@ images built and pushed to registry from
 # Workflow
 
     brew install pre-commit
+    pre-commit install
+
+This will then automatically do the following on each commit
 
     terraform fmt
     terraform validate
