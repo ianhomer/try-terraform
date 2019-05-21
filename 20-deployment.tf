@@ -1,4 +1,6 @@
 resource "kubernetes_deployment" "hello-nginx" {
+  count = "${var.k8s_enabled == "true" ? 1 : 0}"
+
   metadata {
     name = "hello-nginx"
   }

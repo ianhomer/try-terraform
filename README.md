@@ -18,6 +18,16 @@ images built and pushed to registry from
     terraform plan
     terraform apply
     
+# Workspaces
+
+    terraform workspace new appengine
+
+or if already created
+    
+    terraform select appengine
+
+
+
 # Workflow
 
     brew install pre-commit
